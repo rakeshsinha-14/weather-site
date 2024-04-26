@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+body{
+ background-image: url(watercolor-paint-background-holi-festival.jpg);
+ background-position: center; 
+ width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav h1{
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight:500;
+  font-style: normal;
+
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  list-style: none;
+  
+}
+
+li{
+  margin: 15px;
+}
+
+li a {
+text-decoration: none;
+color: black;
+font-size: 18px;
+font-weight: 400;
+}
+li a:hover {
+  color: rgba(40, 81, 81, 0.929);
+}
+
+
+/* Main */
+
+.card{
+  border: 2px;
+  width: 480px;
+  height: 510px;
+  background: rgb(129,194,233);
+  background: linear-gradient(1deg, rgba(129,194,233,0.5) 30%, rgba(35,150,228,1) 100%);
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.244);
+  box-shadow: 1px 1px;
+  backdrop-filter: blur(2px);
+}
+
+.card h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.search{
+  position: relative;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.search i{
+  display: flex;
+  position: relative;
+  padding: 10px;
+  font-size: larger;
+  left: 30px;
+}
+
+
+input{
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.311);
+  box-shadow: 1px 0.9px;
+  font-weight: 5oo;
+  font-size: large;
+  outline: none;
+  padding: 0 48px 0;
+  border-radius: 10px;
+  left: 23px;
+  text-transform: capitalize;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.search input::placeholder{
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.search button{
+  position: absolute;
+  right: 0;
+  right: 60px;
+  width: 40px;
+  height: 100%;
+  font-size: 13px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.search button:hover{
+  color: rgba(40, 81, 81, 0.929);
+}
+
+
+/* weather */
+.weather{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.weather img {
+  width: 40%;
+}
+
+.temp {
+  position: relative;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 600;
+  margin: 20px 0 6px -30px;
+  font-family: "Poppins";
+}
+
+.temp span {
+  position: absolute;
+  font-size: 24px;
+  margin-left: 4px;
+}
+
+.description{
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Weather Detail */
+
+.weather-details{
+  display: flex;
+  position: absolute;
+  padding: 0 35px;
+  padding-top: 15px;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+  display: flex;
+  align-items: center;
+  width: 270px;
+}
+
+.weather-details i{
+  font-size: 56px;
+  margin-right: 10px;
+}
+
+.weather-details span{
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-details p{
+  font-size: 15px;
+  font-weight: 500;
+}
